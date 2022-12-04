@@ -1,0 +1,23 @@
+.upButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 100%;
+  background-color: var(--button-color-primary);
+  cursor: pointer;
+  transition: all 200ms;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    translate: 0 -3px;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    padding: 0.7rem;
+  }
+}

@@ -1,0 +1,59 @@
+.card:link,
+.card:visited {
+  color: var(--font-color-primary);
+}
+
+.card {
+  position: relative;
+  max-height: 25rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+
+  &:hover > &__title {
+    min-height: 50%;
+  }
+  &:hover &__img {
+    opacity: 0.7;
+  }
+  &__figure {
+    background: linear-gradient(
+      to bottom,
+      rgba(72, 76, 97, 0.9) 0%,
+      rgba(72, 76, 97, 0) 75%
+    );
+    border-radius: 20px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    min-height: 40%;
+    z-index: 3;
+    transition: all 400ms;
+
+    p {
+      width: 80%;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
+  img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: all 400ms;
+  }
+}

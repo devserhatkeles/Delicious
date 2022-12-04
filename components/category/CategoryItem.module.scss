@@ -1,0 +1,42 @@
+.categoryLink:link,
+.categoryLink:visited {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  display: flex;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  transition: all 300ms;
+
+  &:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+  }
+  figure {
+    display: flex;
+    border-radius: 20px;
+  }
+  &__photo {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  &__title {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    flex: 1;
+  }
+}

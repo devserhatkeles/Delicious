@@ -1,0 +1,87 @@
+.hero__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background: url("../../public/images/header-background.png") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  font-family: var(--font-header);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  &__intro {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3rem;
+    padding: 0 5rem;
+
+    color: #fff;
+    font-size: 13rem;
+    font-weight: 500;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+    z-index: 2;
+    cursor: default;
+
+    &-text {
+      grid-column: 2;
+
+      &--last {
+        margin-right: 6.5rem;
+        justify-self: end;
+      }
+    }
+  }
+
+  &__button:link,
+  &__button:visited {
+    align-self: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--font-color-primary);
+    padding: 2rem;
+    z-index: 2;
+    font-size: 4rem;
+    position: relative;
+    transition: all 400ms;
+    letter-spacing: 0.3rem;
+
+    &:hover {
+      letter-spacing: 1rem;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      transition: all 400ms;
+    }
+
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+}

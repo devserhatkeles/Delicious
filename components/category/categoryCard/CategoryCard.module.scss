@@ -1,0 +1,23 @@
+.cuisineType {
+  padding: 5rem 0;
+
+  &__itemWrapper {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+    grid-auto-rows: 1fr;
+  }
+}
+
+.categories {
+  padding: 5rem 0;
+
+  &__itemWrapper {
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+    grid-auto-rows: 1fr;
+  }
+}

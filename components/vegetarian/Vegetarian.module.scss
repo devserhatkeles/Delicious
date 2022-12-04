@@ -1,0 +1,41 @@
+.vegetarian {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+
+  &__linkWrapper {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: var(--font-color-primary);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    transition: all 200ms;
+
+    &:hover {
+      translate: 3px 0px;
+    }
+  }
+
+  &__iconWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    padding: 0 1rem;
+  }
+}
