@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Card = ({ image, title, id }: RecipeItem) => {
   return (
-    <Link href={`/categories/trends/${id}`} className={styles.card}>
+    <Link href={`/categories/popular/${id}`} className={styles.card}>
       <span className={styles.card__title}>
         <p>{title}</p>
       </span>
