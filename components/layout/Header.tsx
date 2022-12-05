@@ -19,9 +19,6 @@ const Header = () => {
           >
             Categories
           </Link>
-          <Link className={styles["header__navbar-links--link"]} href="/about">
-            About
-          </Link>
         </div>
       </nav>
     </header>

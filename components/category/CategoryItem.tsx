@@ -13,7 +13,7 @@ const CategoryItem = ({ title }: ItemProps) => {
           <Image
             quality={100}
             className={styles.categoryItem__photo}
-            src={`/.././public/images/category/${title}.jpg`}
+            src={`/images/category/${title}.jpg`}
             alt={title}
             height={700}
             width={700}
