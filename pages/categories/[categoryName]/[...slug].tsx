@@ -1,10 +1,10 @@
 import React from "react";
 import { GetServerSideProps } from "next";
 import DetailsCard from "../../../components/details/DetailsCard";
-import { DetailsProps } from "../../../interfaces/interfaces";
+import { DetailsItem } from "../../../interfaces/interfaces";
 
 interface CuisineProps {
-  details: DetailsProps;
+  details: DetailsItem;
 }
 
 const CuisineRecipe = ({ details }: CuisineProps) => {
