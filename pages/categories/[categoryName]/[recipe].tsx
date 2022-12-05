@@ -5,11 +5,11 @@ import CuisineType from "../../../components/cuisines/CuisineType";
 import DetailsCard from "../../../components/details/DetailsCard";
 import { RecipeItem } from "../../../interfaces/interfaces";
 import { useRouter } from "next/router";
-import { DetailsProps } from "../../../interfaces/interfaces";
+import { DetailsItem } from "../../../interfaces/interfaces";
 
 interface RecipeProps {
   results: RecipeItem[];
-  details: DetailsProps;
+  details: DetailsItem;
 }
 
 const RecipeItem = ({ results, details }: RecipeProps) => {
@@ -47,6 +47,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const data = await response.json();
   const descData = descResponse ? await descResponse.json() : null;
   const results = data.results;
+  console.log(descData.extendedIngredients.length);
+
   return {
     props: {
       results: results,

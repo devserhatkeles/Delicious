@@ -12,9 +12,12 @@ export interface VegetarianProps {
   vegetarian: RecipeItem[];
 }
 
-export interface DetailsProps {
+export interface DetailsItem {
   title: string;
   image: string;
   summary: string;
   instructions: string;
+  readyInMinutes: number;
+  healthScore: number;
+  extendedIngredients: any[];
 }
