@@ -47,7 +47,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const data = await response.json();
   const descData = descResponse ? await descResponse.json() : null;
   const results = data.results;
-  console.log(descData.extendedIngredients.length);
 
   return {
     props: {
