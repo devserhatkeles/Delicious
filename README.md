@@ -1,5 +1,7 @@
 Nextjs Recipe App
 
+Live Demo: https://delicious-five.vercel.app/
+
 ## Getting Started
 
 Run the development server:
